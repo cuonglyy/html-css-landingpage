@@ -24,7 +24,6 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: black;
 }
 
@@ -41,19 +40,26 @@ a {
   margin: 20px;
 }
 
-.intro-container {
+.intro-container,
+.video-textbox{
   border: 5px groove rgb(255, 185, 225);
   background-color: rgb(255, 228, 225);
   border-radius: 15px;
   padding: 12px 40px;
 }
 
-.intro {
+
+.intro-leftside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 16px;
+}
+
+.small-warning-text {
+  margin-top: 6em;
+  font-size: 7px;
 }
 
 .intro-title,
@@ -70,6 +76,12 @@ a {
 .text-box,
 .video-textbox {
   max-width: 350px;
+}
+
+.smalltext-underpic {
+  text-align: center;
+  font-size: 8px;
+  font-family: 'Lucida Handwriting', cursive;
 }
 
 .intro-img img{
@@ -95,11 +107,10 @@ img {
   text-align: center;
 }
 
-.two-of-us {
+.first-row,
+.second-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 12px 0;
+  gap: 10em;
 }
 
 .pic-container .two-of-us img {
@@ -109,6 +120,7 @@ img {
 }
 
 .pic-container .fam-pic img {
+  margin-top: 2em;
   width: 400px;
   height: 550px;
 }
@@ -117,4 +129,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3em;
+  padding: 3em;
+}
+
+.footer-ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(75, 75, 75);
+  padding: 1.5em 0;
 }
